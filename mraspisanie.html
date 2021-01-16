@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Расписание</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+        <style>
+            
+            
+            .menu a
+            {
+                text-decoration: none;  
+                color: aliceblue
+            }
+            .menu li
+            {
+                position: relative;
+                list-style: none;
+            }
+            .menu__list a
+            {
+                background:#337AB7; 
+                color: #fff;
+                padding: 10px;
+                display: block;
+                border-bottom: 1px solid white;
+                transition:0.5s all;
+            }
+            .menu__list
+            {
+                display: flex;
+                
+            }
+            .menu__list>li
+            {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                background: #2d6b9f;
+                width: 20%;
+                margin:0 20px 300px 0;
+                
+            }
+            .menu__list>li:hover  .sub-menu__list
+            {
+                display: block;
+            }
+            .menu__link
+            {
+                color: #fff;
+            }
+            .sub-menu__list
+            {
+                display: none;
+                position: absolute;
+                left:0px;
+                top:20px;
+                padding:20% 0 0 0; 
+            }
+            .sub-menu__list>li
+            {      
+                background-color: #337AB7;
+            }
+            .sub-menu__list>li:hover .sub-sub-menu__list
+            {
+                display: block;
+            }
+            .sub-menu_link
+            {
+                color: #fff;
+                display: inline-block;
+                border-bottom: 1px solid white;
+                padding: 5px 10px;
+            }
+            .sub-sub-menu__list
+            {
+                display: none;
+                position: absolute;
+                left:100%;
+                top:0px;
+                padding:0 0 0 5px; 
+            }
+            .sub-sub-menu__list>li
+            {
+                background-color: #000;
+            }
+            .sub-sub-menu__link
+            {
+                display: block;
+                border-bottom: 1px solid white;
+                color: #fff;
+                display: inline-block;
+                padding: 5px 10px;
+            }
+            
+            
+            
+            
+            
+/*@media(hover: hover) and (pointer: fine) 
+{
+    .sub-menu__list>li:hover 
+    {
+        background: yellow;
+    }
+}*/
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          
+        </style>
+    
+
+    
+</head>
+<body>
+<div id="container">
+    <div id="header" align="center">
+       <p>
+           <img src="emblema.png" width=20% height=20% align="middle">
+	       <strong>Московский государственный институт радиотехники, электроники и автоматики (технический университет)</strong>
+       </p>
+    
+
+	</div>
+    
+    <div id="navigation" align="center">
+        <nav align="center" style="font-size: 130%">
+            <a style="text-decoration:none" href="index.html">История МИРЭА</a>|
+            |<a style="text-decoration:none" href="map.html">Здание и карта</a>|
+            |<a style="text-decoration:none" href="direction.html">Факультеты и направления</a>|
+            |<a style="text-decoration:none" href="mraspisanie.html">Расписание</a>|
+            |<a style="text-decoration:none" href="army.html">Военная кафедра</a>
+        </nav>
+	</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="content">
+	   <h2 align="center">Расписание</h2>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a href="" class="menu__link">Первый Курс</a>
+                <ul class="sub-menu__list">
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a>
+                        <ul class="sub-sub-menu__list">
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                </ul>
+            
+              </li>
+                <ul class="sub-menu__list">
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a>
+                        <ul class="sub-sub-menu__list">
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                </ul>
+            <li><a href="" class="menu__link">Второй Курс</a>
+                <ul class="sub-menu__list">
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a>
+                        <ul class="sub-sub-menu__list">
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                </ul>
+            </li>
+            <li><a href="" class="menu__link">Третий Курс</a>
+                <ul class="sub-menu__list">
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a>
+                        <ul class="sub-sub-menu__list">
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                </ul>
+            </li>
+            <li><a href="" class="menu__link">Четвертый Курс</a><ul class="sub-menu__list">
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a>
+                        <ul class="sub-sub-menu__list">
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                            <li><a href="" class="sub-sub-menu__link">Подпункт 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                    <li><a href="" class="sub-menu__link">Подпункт 2</a></li>
+                </ul>
+            </li>
+          </ul>
+        
+        </nav>
+	</div>
+		 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	<div id="clear">	 
+	</div>
+						   
+	<div id="footer">
+<br>
+        <p><span style="align:left;"> Ⓒ2020 Марданян Артём ИКБО-20-19</span>
+        <span style="float:right; margin-right:15px;"> +7(895)275-02-18</span>
+        </p>
+        <span style="float:right; margin-right:15px;"><a href="https://vk.com/mirea_official"><img src="vc.png"></a></span>
+        <span style="float:right; margin-right:35px;"><a href="https://www.instagram.com/rtu_university_official/"><img src="inst.png"></a></span>
+	</div> 
+    
+</div>  
+</body>
+</html>
