@@ -31,7 +31,7 @@ body
      width: 90%;
      height: 25%;
      box-shadow: 5px 5px 3px 1px;
-    z-index: 1000;
+     z-index: 1000;
 }
 #sidebar 
 {
@@ -43,7 +43,8 @@ body
      box-shadow: 5px -5px 3px 1px;
      width: %;
      height: 40%;
-    display:block;
+     display:block;
+     z-index: 1001;
 }
 #content 
 {
