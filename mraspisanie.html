@@ -1,25 +1,25 @@
 <!doctype html>
 <html>
 <head>
-        <meta charset="utf-8">
+        <meta charset= "utf-8">
         <title>Расписание</title>
         <link rel="stylesheet" type="text/css" href="css.css">
-        <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.0.js"> >< /script>
         <style>
-            
-            
-            .menu a
+
+
+ menu a
             {
-                text-decoration: none;  
+                text-decoration: none; 
                 color: aliceblue;
             }
-            .menu li
+ menu li
             {
                 position: relative;
                 left: 0px;
                 list-style: none;
             }
-            .menu__list a
+ .menu__list a
             {
                 background:#337AB7; 
                 color: #fff;
@@ -34,21 +34,28 @@
             }
             .menu__list>li
             {
+                /*white-space: nowrap;*/
                 text-overflow: ellipsis;
                 background: #2d6b9f;
                 width: auto;
-                margin:0 10px 200px 0;    
+                margin:0 10px 200px 0;
+
             }
             .menu__list>li:hover  .sub-menu__list
             {
                 display: block;
             }
-            
+
+
+
+
             .menu__list>li:hover  .sub-menu__listt
             {
                 display: block;
             }
-               
+
+
+
             .menu__link
             {
                 color: #fff;
@@ -61,7 +68,9 @@
                 top:20px;
                 padding:40px 0 0 0; 
             }
-            
+
+
+
             .sub-menu__listt
             {
                 display: none;
@@ -70,7 +79,10 @@
                 top:20px;
                 padding:40px 0 0 0; 
             }
-            
+
+
+
+
             .sub-menu__list>li
             {      
                 background-color: #337AB7;
@@ -79,22 +91,22 @@
             {
                 display: block;
             }
-            
+
             .sub-menu__list>li:hover .sub-sub-menu__listt
             {
                 display: block;
             }
-            
+
             .sub-menu__listt>li:hover .sub-sub-menu__list
             {
                 display: block;
             }
-            
+
             .sub-menu__listt>li:hover .sub-sub-menu__listt
             {
                 display: block;
             }
-            
+
             .sub-menu_link
             {
                 color: #fff;
@@ -110,8 +122,8 @@
                 top:0px;
                 padding:0 0 0 5px; 
             }
-            
-            
+
+
             .sub-sub-menu__listt
             {
                 display: none;
@@ -120,14 +132,25 @@
                 top:0px;
                 padding:0 5px 0 0; 
             }
+
+
+            /*.sub-sub-menu__list>li
+            {
+                background-color: #000;
+            }*/
             .sub-sub-menu__link
             {
                 display: block;
                 border-bottom: 1px solid white;
                 color: #fff;
                 display: inline-block;
+               /*padding: 15px 30px;*/
                 padding: 5px;
             }
+
+
+
+
             @media (max-width:567px)
             {
                 .sub-menu__list
@@ -147,30 +170,20 @@
                     padding:80px 0 0 0; 
                 }
             }
-            
-            @media (max-width:460px)
-            {
-                .menu__list>li
-                {
-                    text-overflow: ellipsis;
-                    background: #2d6b9f;
-                    width: auto;
-                    margin:0 10px 300px 0;
 
-                }  
-            }
-            
-            
-            
-            
-            
-            
-            
-          
+
+
+
+
+
+
+
+
+
         </style>
-    
 
-    
+
+
 </head>
 <body>
 <div id="container">
@@ -179,10 +192,10 @@
            <img src="emblema.png" width=20% height=20% align="middle">
 	       <strong>Московский государственный институт радиотехники, электроники и автоматики (технический университет)</strong>
        </p>
-    
+
 
 	</div>
-    
+
     <div id="navigation" align="center">
         <nav align="center" style="font-size: 130%">
             <a style="text-decoration:none" href="index.html">История МИРЭА</a>|
@@ -192,15 +205,15 @@
             |<a style="text-decoration:none" href="army.html">Военная кафедра</a>
         </nav>
 	</div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     <div id="content">
 	   <h2 align="center">Расписание</h2>
         <nav class="menu">
@@ -209,79 +222,79 @@
                 <ul class="sub-menu__list">
                     <li><a href="" class="sub-menu__link">Институт информационных технологий</a>
                         <ul class="sub-sub-menu__list">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=rl76EJ7oDTPeTFwNYYyHOS3581t7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVOdUY3U05FN3NFMDZOS0VMdk5saklBNWJpVG5ZNU9hNm9ianp0aWxGUmlhNjJtWlhma1pkZFZQWThCMHNoTHBFTFZmbU53NFM0UzBreURfZzU0Ym43OVVUbHpsV0syZXBoRktPYnRpYVdrdmRyMkVFV3YzLVhsTVlpcWttQXktZHc9PT9zaWduPWFQbUpNaVlGRzNQQVdBOE5OV2hxRjItUVM0U2VOTHphZkxxcmMzV2ZkTFE9IiwidGl0bGUiOiLQmNCY0KJfMdC6XzIwLTIxX9C%2B0YHQtdC90Yxf0LfQsNGH0LXRgi54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5NjY0NTMxNywieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=0bHBg4P9Vl1GwK2xxEWVT%2Baf67B7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVGeTdBOHMxZUlRRzRRY3BzZk5hVTR3Wnh2UWt6RndrYVNiRjBhb1h5ZWs0NjE0VmVFRGNyb0pXWXFxREtIR3NkWjRvb1pRc0RuNVExVUF1SHBHUkJpeHdIZUp4cExyMUNhMG9oZzU2MFJzSHNYX3R0TEVmbGozQjRYRDFXZEZTSFE9PT9zaWduPUZ5ZG0yWk9UV2xqMkVwa1hkRXcyU1lpM0gwNFJEME11N1l3YjRFeXF6VDA9IiwidGl0bGUiOiLQmNCY0KJfMdC6XzIwLTIxX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk2NTEwNjYyLCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=0cdtrNsTNoDOKxIN1MT7EwGIukV7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVIVEo5eDB0M1J2TFFxV1oyWEdsbUFHOVdBbEVnS01UblhOdXBvbDV3S29DdGJxelBQVnQtXzduNzE1SzYydkw0MVRzQ1A2MENPWlNlOTdYYkNhTTU3UWFwcURBT0RHelVnZFloa1plSTMzQno5VUI2eW5iWTJ3OGt0YjZVcmdxUFE9PT9zaWduPXdVS3VOd3JvN1pPNFZkel9xNFppb0k1dnYtSWNON0U2eTF6RElOQTlMcms9IiwidGl0bGUiOiLQmNCY0KJfMdC6XzIwLTIxX9C%2B0YHQtdC90Yxf0YExMy4xMS4yMDIwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk2NjI3NTk2LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт кибернетики</a>
                 <ul class="sub-sub-menu__list">
                             <ul class="sub-sub-menu__list">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=eR%2BZjBHG%2FqU16g0vhOo7xTFXB8l7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVOWWNLOGNrRnpUS2VBUnhrMnRwbHY0eWNEdzVEa3VtOWtLY2ZETlRqQUQtVHFFRjAyVVpteUFwdm9oUzAxaUwxb2FqZHNNVkIzOEtPWjFqeUkzb3VXVGk0R21pUG9jeHk0OVpiX2h5VUpSRmFHdjJSQXZNLVlLSjVveTlyWVpRUFE9PT9zaWduPXczSUxYaDd6UWtjSUd4QU4zR0Z4TXR4ZGhhQWlaWkZQUGF6SWs0UWpYN0E9IiwidGl0bGUiOiLQmNCaXzHQul8yMC0yMV%2FQvtGB0LXQvdGMX9C30LDRh9C10YIueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTY3MjExNDIsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=Y1F%2F8%2BZt0e%2FhExS5hM8oK4xVool7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVKTjJOcG91bW1XTTY1WjBhdlBBYUg0LWpBalNodlJYd1F4NWFqUDRTbGk0WG55WHVZdlJ6TlNITU5TWTRzUm1IMjJjR2VISlFiQWZ3UF81ZUJoVm5vQ0tnaG9Vd0E0VnE2UGFmMGNNRzNNbDAxMnppZWJMQ2VBcHpOYk11NHVPZWc9PT9zaWduPWpiX2VRZTNJMXJQZ2FvdFlBV1owc1J3aFpXTTdyRUhYUlJ4bVg4cjU1cEE9IiwidGl0bGUiOiLQmNCa0LjQsV8x0LpfMjAtMjFf0LfQuNC80LAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTY3NDk5NjUsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=%2B9lRDkVeu8UkMnK4c%2BSXdEdcVGh7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVBclpvcHdaUzFkNEpZQXR6QlhBeVpONTJuMW8wc2ZYdUxFODhfZ0tfQ2JhMDdlbDlaNmhnQzNMSVFCa0U0UklvWXZwM1d5bUxLbFkxbGh3QlAyZnB3ZzhBR3dleFJ5U0t5U3RHYTAxQkZmNl9qbVRDSmw4XzNpMjZBU3hTT3F3c3c9PT9zaWduPWJaSXY5Q2lva2E0cFA3OHFod05IZVRGS0JCQmlobEo2UWtGZFdNTzNCaEE9IiwidGl0bGUiOiLQmNCaXzHQul8yMC0yMV%2FQvtGB0LXQvdGMX9GBMTMuMTEuMjAyMC54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5Njc0MDA4NywieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                         </ul>
                 </li>
                     <li><a href="" class="sub-menu__link">Физико-технологический институт</a>
                 <ul class="sub-sub-menu__list">
-                            <li><a href="https://sheet.zoho.com/sheet/officeapi/v1/dbd16d354362558047b0dc045754369ae1ce26655ec72ddeeb17a5b8261f6e95a07c7afb71f4800991ac1af003d9cfe588286b547bd49ebc1c59084e17bcf21c" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://onedrive.live.com/edit.aspx?action=edit&resid=3A8FC71045623317!712&ithint=file%2cxlsx&action=edit&wdNewAndOpenCt=1611080760925&wdPreviousSession=18c869c1-2b17-4ab3-bc37-8a179ad1c288&wdOrigin=OFFICECOM-WEB.START.UPLOAD" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=4aEPY6koFiTZp5tWPIvn43i%2B0B17InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVNTDdtejMwRFFfR1hrNzV1MmxPclZjQ293NXY1NGFXREtKdVhOUlZfeHFqRkhwaUdTamtxcE13WEpMUmpQQVgzclc2eTV4RXQ0VEstY1dSajhlSk80am5jTG8yNDhoS3gzSXlGMzBZQjlUWDBHNWNMQzNMSjNEbTg2M0E1bEd4LUE9PT9zaWduPXJaNG40VHUzTkJiNWRVaFlRZU5pWVY1WmFTVnhKNTRHbDE4M3ppT3NlNGc9IiwidGl0bGUiOiLQpNCi0JhfMdC6XzIwLTIxX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk1MzY4MjM5LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=avifIRftL%2BHg%2FF0XLTLkSRT4M0t7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVBcFlTVEZyeE40b0pQaUVZbVQ5V3NZdWtGMlpDREZKSG9hcUVYSjVFb2Q0cFppSjQzSzRKLUVYdHNuZThUR2RhdEVjaGdJSVFjSmFyUnBVekFoeVhsckZSNkVZcDIweXVockozZXg1Zmx0TTRLREszcnpubkpmVEFtZDhRRjBxdnc9PT9zaWduPXVCeElYUm5YTFVEVUQxbTNzUHk5TDlxZ2d3WFhFRkhkQV80R0pGVUJfLXM9IiwidGl0bGUiOiLQpNCi0JhfMdC6XzIwLTIxX9C%2B0YHQtdC90Yxf0YExMy4xMS4yMDIwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk1NDEwMTQ1LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт комплексной безопасности и специального приборостроения</a>
                         <ul class="sub-sub-menu__list">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=bDSytmPkADWfhSF05Z%2FaHnax7I97InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVQZ3dUdzZsWGZOYTlPTGFuMXBZY3dIYzduUzF2bzlGeGFyTFcydDVRQ0oyZTRwaTJSMDM1WmZKOF9yMDFwWWl5VWUzbDdCakZCbUJMSUk5Tkh4c2pYREJpTUFCVXBySUdDcmpxUC1qUTh3MzFOVWRjTkZ2UkxQdjh4Smt3Q3ZzV1E9PT9zaWduPS1HODN5eURVUGpFUF9tNXlmbW9yRWZMakJ1bUpYZTNOU2VFMjM3UXpaUlU9IiwidGl0bGUiOiLQt9Cw0Ydf0JrQkdC40KHQn18xX9C60YPRgNGBX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk2OTg3MTA5LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=GWZLx92%2F1YVPK1t0o0K%2BRPM%2BJKh7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVLQVdGY0pJM0UtQXR0bmp1SEh3d1FoNy1fUWxMQ05UTUlaWk1FZ0wweDBaRnowaHppMTZnYVVrZ1luQ3RYNG9CbGdBZ2hfa1lpeUhvQkFGUkpsVTA3RTdlclM1VDNLdFZIQ2d4NGlIUGVMcjFEdzRWWkN6QzEtU2VzbW1sRkRsMUE9PT9zaWduPWpZU0c5RFMxcXROQzg4UTc2LXpQZmZBZEY4cEhvTVh1YklCbzI1aHlEbkE9IiwidGl0bGUiOiLRjdC60Ldf0JrQkdC40KHQn18xINC60YPRgNGBX9C30LjQvNCwLnhscyIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTY5NjU0MDIsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=bLHZWT6qnYTM6%2BWKP5p3PpQy4SR7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVNT3NjV2lSTzZyYUxEVFl5b2lJSWxYZlBIYkNMbC1kb2J0Zms1cVJleV9kSGRXTFNOZWJReF80MkJZMVZzSDEweTZ1ZTZfRDhlMml5b2tBdVUzRTdiVUxreDZFS1E3dkg0M1JyLWp5ajAwRUxneUY0Q3p3dTBCTU53ZS04aWltelE9PT9zaWduPTUwUURBclc2WFlrLVpGZ3p0ZEd2SmEtU0kwZ0pud0dXY3MyRmwzcWpvQVE9IiwidGl0bGUiOiLQmtCR0LjQodCfIDEg0LrRg9GA0YEgMSDRgdC10LwueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTY5NDI3OTYsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт радиотехнических и телекоммуникационных систем</a>
                         <ul class="sub-sub-menu__list">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=TmRMFMC%2FF04Yoyg6S3kxVB6MRqB7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVCWllqVUFVUVI0VGw3WEFPZU01U1JIVmpXdWYtbjc3X0xFcGdsQkZYWlcyYW9JM3hmMjZIY01BSl9NS3Bra1Nmc3RSZjZROUN1ZWtfRFVSZGZWQXZsRWhsaUZCYWt0XzlMMmRNV3VVZVR1NkNqcU9LLUF6M0ZSRkw2UUNxVHZwSnc9PT9zaWduPVkwZkV5R0hkYXAtamlmeHp2SHB1X1Frcm5vR2ttcThjVnpRVkVhZ0lDQ0U9IiwidGl0bGUiOiLQmNCg0KLQoV8x0LpfMjAtMjFf0L7RgdC10L3RjF%2FQt9Cw0YfQtdGCLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk2ODA1Njg5LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=67OZ5XwmIhPOoV7W61csEmT1%2BsZ7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVCSUpTbGZnT3lvTXRnYllQLTd2dnVzSjJ5MnNiUXJsSlAwb05UZTAyWDhiT0gxc2E2TkxwYnplWjJWU0ZiMk5ocFNNZDRmRzA5VDU1d05OaXVKZ2dybml3cTdKOF9Vdi1aWThGQ1VSVjNDaHRvMlNBdGRjRkhjc3pxa1NLU2FHUmc9PT9zaWduPWNSY0FiN3FVQjRzT1lNUHFVOVhNaWJSbllYbWVlMjlWVFkyd05EX0Jnbk09IiwidGl0bGUiOiLQmNCg0KLQoV8x0LpfMjAtMjFf0LfQuNC80LAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTY3OTIyMTEsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=AoLOLdgva%2BDrLK2n2nr6gp8bzel7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVNckRadXM0bVFaZWllUkMtWnlRZUF6N3hBVHZQTWVIWnZ5ZEZyQXkzUWFqNHlkc1RpaUV0cmpsd0VxMlVaLXVfMGpjYlZ5bjNwUzdtRkJPbEd5elJ2SWsyZ3h4OXJhek5fMFR6WUxRRnE3U1p1QTl5TXB3V2Q2TkVLa3EtdTItYlE9PT9zaWduPTRTRlRqMHBRbFRyQ01LM0dXc09EZVFGSmp6MmVPQnlFUFJZcmQ2cllwYVk9IiwidGl0bGUiOiLQmNCg0KLQoV8x0LpfMjAtMjFf0L7RgdC10L3RjF%2FRgTEzLjExLjIwMjAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTY3Nzk5MDgsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                 </ul>
-            
+
               </li>
             <li><a href="" class="menu__link">Второй Курс</a>
                 <ul class="sub-menu__list">
                     <li><a href="" class="sub-menu__link">Институт информационных технологий</a>
                         <ul class="sub-sub-menu__list">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=N8QU6I4BgBkDB4oda4lqeg2wSH17InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVONjdMSC1ITFE4U01UWUNoU2lsOTRqdlpvbXJsalY3RXk4Y0pjcDdVNE4yU3paU2ZvMWJYa3dGOE4zSzZxQzBvM2lXeTdTVGI1Y0ZhRWVON2FpWW5MMlRCTm1vNVNfLVo2RnFMRGRwRnhJN1gxZUY1eUY0b1B0LUpRNnpZcmMxM2c9PT9zaWduPWhzX08zYzBkNHRkZDl2Mjk1Q3ZWM3RER000eUFpYUxNRDlVcF9wN3ZIUzA9IiwidGl0bGUiOiLQmNCY0KJfMtC6XzIwLTIxX9C%2B0YHQtdC90Yxf0LfQsNGH0LXRgi54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5Nzg3NTExOSwieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=t3Fp1zA1mxhkzLwKk3W7vK3zbM97InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVQNlpDQXM4ZWM4VGFWUkRmTjRkb0lXM3RHekppQ2dTbTUxakprbXgwX2tGaVNJdWExai1TeHdKQ2FIeVBuVjNaM1dGTnRGdFJZdmNrU2ZoZ0RLcmd2STFhZXhKWFBSd3hmbHhwZFFWUUdxVGFnZ1NtbjlBaFRfT0Zhd3pheF9KcWc9PT9zaWduPTZ1VUJqM0xBZjBpT0pZT3c2d2JWMWZSbzdxc3A0YjhvbWdZa3Via1pnRkE9IiwidGl0bGUiOiLQmNCY0KJfMtC6XzIwLTIxX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk3ODQwNDA4LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=hF72T0BEIH2C0kY8chrpTDlJsgR7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVCRG8zMHBHWmEwcmVwVXRWRUtXdWJXOEVCQjJidl9BaWZfdkhKM2V1RUJLZlhtVmtvZWZrNTdMZnJKeWx0bm5vRkJyOUdBT1hrQU83eGhrY0Utc3EwZUl1YWtkb3E5MVV6YUVuODFLd3R2bkYzTzdWeGw1dnQ5NUFmZEFTa2RTemc9PT9zaWduPUJlQ1QtZzd6ZUxKSVNBOXVMM3RiVVd2b1Z6Ym9NXzVzSWRYeXBZczIxR0U9IiwidGl0bGUiOiLQmNCY0KJfMtC6XzIwLTIxX9C%2B0YHQtdC90Yxf0YExMy4xMS4yMDIwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk3ODUzMzI0LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт кибернетики</a>
                         <ul class="sub-sub-menu__list">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=KGH7Jj%2BiljYOvoBs1ZbhYAyRDch7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVQQUtjNTAzT3VJZ0pEVVhINDNLemxrWFAwdGtkSnpKd0ZJdmVhekdBdGdaM05rNzEyUXdQMUNRYXVNQ21wTGxHYm9Wb0s1OWlFSEVfT2pIVVF0WlZnUWhDSTIxOWZWSTgxVjVjMnpuaEtKZC1ENGJmT1VCdUxyYmx4U2gyeFpYcHc9PT9zaWduPXJFVnF6RzdpOGo4UzhITGc3MUVkb1Z2c1JVUnUzUU5YOHhPUW5DS2FmZWc9IiwidGl0bGUiOiLQmNCaXzLQul8yMC0yMV%2FQvtGB0LXQvdGMX9C30LDRh9C10YIueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTgwNDQ4MjAsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=NO8fFjQpKwnKAXF0o0Em0RNOFch7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVCUHRwdWxGWEVTbzhoNTJKRXJaanRGRmF1R1NZNDQ2b080UWh1Q1hBTW5fT214cEUyRk1HM0lXQlRhQXFnTXVmaWl3bXFpNERjXzltWURNTjZXc2QxUmxjclNrOFpRQWxTYmVORnBZVURndkRRMDk2alIwOHZtT1E1NDN3YmUyY0E9PT9zaWduPUZxY28tcGFqaUZYbzFFbWhza0hWaC1ldzVjaTlIRHlqcHQtYm5la0JQVzA9IiwidGl0bGUiOiLQmNCa0LjQsV8y0LpfMjAtMjFf0LfQuNC80LAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTgwNjQyNTIsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=AMV%2FvsifMa9ffCk2QK%2BO4PdaWE17InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVMWS1ZMTJGajBacXdhNHFmaWdsZ3prWXpWeFRWUVZSTUxnTWo0V3lNMFRTVWZreFhiYnRKUW5nQ0wxWFRiR2dNVUFBSU5WbkpsM1R6eFFodmc0c0dxOWM4enFPanJEWlFleWFzd0xpTFdJaFZRVnZ3WWt3NDF6QjMzdXZ6Ynd3MkE9PT9zaWduPVRUQURyZkpubklKY3B5Z3BFeEpBQ3MzQ0VXTVozaW5hcXBYa0dRNk1lQUU9IiwidGl0bGUiOiLQmNCaXzLQul8yMC0yMV%2FQvtGB0LXQvdGMX9GBMTMuMTEuMjAyMC54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5ODA1NjA1MywieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Физико-технологический институт</a>
                         <ul class="sub-sub-menu__list">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=imB1t2JehCeMcyav3D%2FMMjJqRO97InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVDS29hNmhDaWowQnZFRWhUQXhGSHdTOGpqTmxtRFQwZ19KRlJwTVFMTzNpVVBwTl9PXzJkVVhmcHhaaVp6a3VnblZYaUZWN0ZHcHJ3Yi1ISnlBYm53YTJFbHFDTlZETEd6dno3Y1VITVRDb1pBaHFSRXNVUktfek5uSU9QYUtpdXc9PT9zaWduPVN4YUxUQUlTUTMwU3RZMkNwQ0FXQ190OVYwX0Y5ZjVqLWJOcDl2YmlLLUE9IiwidGl0bGUiOiLQpNCi0JhfMtC6XzIwLTIxX9C%2B0YHQtdC90Yxf0LfQsNGH0LXRgi54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5ODIzMTA3MSwieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=ZGbOXFTyV5GWe72RDSvYIqiD16p7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVKU0ZMVThrczJGSVcxX0dYSC1ObWRwV2hKMnN0TTBPT1hIcWU3QmgzVkdyU01TZk5HbHpXcWJSRU8tUWdhSXlOUnl4Wm05azZDOFh4Z1Bqb29XUkxyR25xN1NyRHVwcHlLV1VHWk92a2FTcHZjRDA1RUMwY2VDY0lkQnNMLTV5ZGc9PT9zaWduPUwyT2tBYmRkTjY2R01qX0RiN2VjalVyR1RLdDEwMjRQWkxMTWJpNEZpamc9IiwidGl0bGUiOiLQpNCi0JhfMtC6XzIwLTIxX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4MjUwNzA0LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=E0bODbuDo8B5EukyWYDqaUNMVNd7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVFWWsyckZDX2pkSmRfNWlJMWpydkhSR2NhaVVFekFmYUFCXzBGVkR3enNWX09uMnM0ZHZXbFVVYWRhRk9ad19uOUJRMndqTHZFSXhVSWM5dlo2NFRXV19LZlQ5SlFPLVFfY1JiUENCbG1JQi14MUltSkI3aWdaV25qQ2hNcXZjdWc9PT9zaWduPWRzR3BKV3l6LXNuRDY2ZGRPY2JaZGRsRFNtVHgxMVRsMFpWN18xc2hGTWM9IiwidGl0bGUiOiLQpNCi0JhfMtC6XzIwLTIxX9C%2B0YHQtdC90Yxf0YExMy4xMS4yMDIwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4MjQyODQyLCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт комплексной безопасности и специального приборостроения</a>
                         <ul class="sub-sub-menu__list">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=RQZpKRwEgnA%2Bj4gjyDlOcZQIGR17InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVJQ0JvaURVXzZsMmI4cjJER0Nsb0E0WEtzcHNmdzY1TWRxSDE3M08wV0tWQmxlT2ZwSmtQTzFNakNyNERyVFJOVmFadTRxYWN0SWdNbGxwd25QUm1ySFVhQnMxU0ZDcDZsRXdrc2xhd3hvTEFqOElyVzhESGRHU0hVNUJaSExyMUE9PT9zaWduPUFwZVdVZURfdHVDOFhNcW9YZjI1Nko4dndXTzZlWHliVDVqZjRaNDJ5WWs9IiwidGl0bGUiOiLQt9Cw0Ydf0JrQkdC40KHQn18yX9C60YPRgNGBX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4NDU1NzM5LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=A%2Fib8jI66lmojtHjDkEa0nc5g4V7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVIaTNkWWZaTFYyVDlXYVV2Rzl1OGdKemh0TkZmd0xFQnNmaUl1RndkMVhqYm1sU0pyRTFWLVV6NUhxVDdEemx1SzRZRUNVc2tLZjRwOEpCdUt1V0tGRVZHZW9KT1hVZksxOUtOMWtiN05sMU9FaVN4QS1ZektDYkpzSEk0TC10TlE9PT9zaWduPWRiU292bld3UFd2TlpBYkdHN0phZW9CSF9LMHV1bUxDUVY0dVRRT0RxTWs9IiwidGl0bGUiOiLRjdC60Ldf0JrQkdC40KHQn18yX9C60YPRgNGBX9C30LjQvNCwLnhscyIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg0NTQ4NDUsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=K7US3kS2dHdsexIaEu5Fjw5CH4x7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVOcElLWF9mUEc2QU8tU04tOGpfU0pCWjFQcW1mRGYzRkVIRmpxOUI2VmFBdEsxRUlBQ19kdURkU21NMnVrbUxoS1RzdEo5LXZSbTU2Y0c4cy1uN056eHpWRWlDTzJ2a3J2M1FVc2lNaFVvOUlDUm5wMnBLNHFUZ1NOWTFETkJvR0E9PT9zaWduPXo4a3d6aDZJQV9taE1zY2xYeFNnTkRIZW1KN2wxSU4zYkdjaTdjUVlHVkk9IiwidGl0bGUiOiLQmtCR0LjQodCfIDIg0LrRg9GA0YEgMSDRgdC10LwueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg0NTM5NzIsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт радиотехнических и телекоммуникационных систем</a>
                         <ul class="sub-sub-menu__list">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=ljUe95HFuRM%2FwxaxMFqeo9VSfSh7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVGN0dQMTBwcTYxVWZvdmxpTjNvNmlINldrZENKVUJRYmhBVEZDTzlobFVtclhDZWE1QkJaWFpyOGdRLS1CU0JiaURLU3duVGdHV1VVNklCSHZ5ZFBfZ2xEb0o4Q3RJU1lfWXVaa3R4Q0JyNWVsOW9ERGUxbWs2LVpJS185STN0dkE9PT9zaWduPUZvMkxBVWp4MUlmUkQxVE1vN2V6M09sSnBlMnJoZ0hIMTNhY3VUdWJGblE9IiwidGl0bGUiOiLQmNCg0KLQoV8y0LpfMjAtMjFf0L7RgdC10L3RjF%2FQt9Cw0YfQtdGCLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4NTc2NDY2LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=ERzUsSsXah7%2Bh2df5ownQ1oTsbp7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVKeXZMUGhzRVNmeU4zdTd1bFVacXJEYllfbjluVTJvcUtYX2xjVk5lTVRLZXgxTFQxYldCamNROGo0aWdmVmFja1dDOXZzWXJOZ1ZkbnNEcUtSaWxaUVhSLXk4c1dUaWpvSmIxaS05SnMxSk9PdHMwV2pMWjVZaUFjbzl3X3l0Tnc9PT9zaWduPS0teTlkT3hoMm9nRlZFM0NfcTZpRlQ4dzZhYzRpMnRkZDZPV25mS3UxSGM9IiwidGl0bGUiOiLQmNCg0KLQoV8y0LpfMjAtMjFf0LfQuNC80LAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg1NzU0NzYsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=5wZkn3Uv0gcyZVTs6TxkMFMABfB7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVMTUxzbXRIY2xRUElqN01MMWp6dnNlYzlHaExfOXJKTkhHeDQtTXBtTUVPM1lqZkItTGN5VXN6X1ZKamw5V2l5VkRuT0pvNUdXM1NTdEpsb0k5aTVvSnVIR28zSUJLNnY4LW9RWXpVNGlySTRXZlNwZXJ4N0JhVHJMTnF6a2tmY1E9PT9zaWduPWJzMGlTR2J6VDhucnQ5QmtXSGFQbFNQUGxvcHM3S2FNdnBvb3RFelA4U009IiwidGl0bGUiOiLQmNCg0KLQoV8y0LpfMjAtMjFf0L7RgdC10L3RjF%2FRgTEzLjExLjIwMjAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg1NzUwMzcsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -290,30 +303,30 @@
                 <ul class="sub-menu__listt">
                     <li><a href="" class="sub-menu__link">Институт информационных технологий</a>
                         <ul class="sub-sub-menu__listt">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=R03abRTqz%2B3q0Y7S9GKCihuFXct7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVQNHhrQ0l1ZUdLVHlieFR6ekFMX2dyWUQ2RjVkWnpOa1g3M25YM2dJT0JPM1NEZnVfeW5MLWktYzZqcENZS253TGU3T1dORUkxVlNrSHdpa1Z3dG5iS0ZtX1ZoMkFrVkFNcVZUdFc2MGNOM0JnckJXYkZ2ZURHUzI4YnZiVDBQRXc9PT9zaWduPV94c0U0MHdRVERVZnNuQm80MmZNaTkxVnFmZlVvdi1xZFhlSE9GMFZfWDQ9IiwidGl0bGUiOiLQmNCY0KJfM9C6XzIwLTIxX9C%2B0YHQtdC90Yxf0LfQsNGH0LXRgi54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5Nzk0MjAwNCwieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=Fh1aZL3PWW7WUTK%2Fmwyrg3dnYW17InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVGSW1TM0l6Mm1EaER0STRsWlVqSEgxS1JpcXFRVzdmR21LS1A0bWY4MGM2WVlYVVJmY3d4NzlfbXFidWJLQjQ4UkJyUEJRWHh0aWZiU0wtOVlRRzRUVmkwZmpyaVF0VU1GOUN3TENMQVdQNWNPRFBYd2ZpMk0xOV9IUkJKUUtIYVE9PT9zaWduPU1qLWotZjAySFBPOWotN0o4QmUtTkEzTHFoN3NoT21pZjc3SjdRWTJZdDQ9IiwidGl0bGUiOiLQmNCY0KJfM9C6XzIwLTIxX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk3OTE5MzE1LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=ckJote6gihHuIQIETBWUcKQ%2BZLB7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVBNWhEd2RHZDdEREFJd2o3TVNUdUVzTmN6dzNzemFQaXVlNVVVOW9fTkpfT0owRmdkZ2dJaXNfaUZtVnVFeGFqcWc4T3VvRjBXUlZzRHJjTlFyaGhVTEJQdEFscldzSHYzQkwzYXZ1ZFA4em9walpXQkJzbUlOb0UxQk0yWjVIM1E9PT9zaWduPUFQSk9VVEFtNlVQRi1CNWgxSk1hbEtLODVNR3pWVFk4aVVkbTZnaEpram89IiwidGl0bGUiOiLQmNCY0KJfM9C6XzIwLTIxX9C%2B0YHQtdC90Yxf0YExMy4xMS4yMDIwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk3OTMwMTE2LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт кибернетики</a>
                         <ul class="sub-sub-menu__listt">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=iFANVRZwcOOBP1UyRLycMqvihXB7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVBU2FXNFZ2VzYydnJ0akF0ekFVdU5lRTVKQkRzdllvdHd4N01UVVpfQ3Uzd21VLWZRbjRacURzNWpiTVkySi1wUkpFcVc2dXo2WEVhUDFQU0wyQVA1OXlSRkFVVndlZFhnRERXM2R4emZ5RURlY0F1VEZtWGpXQmN4WGV0eW1mdXc9PT9zaWduPXpIZVB5RTcwNXJFMzVCQldzTzZlM2F4bHJ0TzIyVktNZklfUHB0N3pWUVE9IiwidGl0bGUiOiLQmNCaXzPQul8yMC0yMV%2FQvtGB0LXQvdGMX9C30LDRh9C10YIueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTgwODc0MzksInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=fDFvNY7XKpUvUhVnL21xQmrL8mJ7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVNTlRVWG9Uak5uU1lQMDllWk04Y3VtUmVzX2dmbUNqMm9fSTZ1dzhUZnpuMWRlQmFtZjdtbTVRVk5ieHBheGYxSWJydWpPOWFNY1ZHZUFqZlNJeWdrVzFlSGh6YkNGbjRTdHRUUWNHN0JkcXpRRFdrb0xsallfUzZwVGI4R2w4MXc9PT9zaWduPXY0RDNnUE5nQmJ6QmN4dWZ4ZFA1dWplV3RlekVLdjJ4TmtvOVlBUG5xbEk9IiwidGl0bGUiOiLQmNCa0LjQsV8z0LpfMjAtMjFf0LfQuNC80LAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTgxMDc0NzQsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=mLe7fY1Gc%2By%2F50dm2HZY27sVoal7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVEWllWM0E4a0U4cXZUWEF6eS1PNTlpQllYaVA4dGc5RUk2U2lQNUFNcktZUDZiQ3BtbVBjcWxRb1JfSVVQX1kwMk1sQWNBQndROU9fZVFiSElIODVGMmY0aEgwOU10aDB1UXRuYTFHUmZDSnoza083YW1ZaE80Q0g4TWhsVERxdEE9PT9zaWduPUN3Y3lwZld3OEtlWjNRRVdEZDRNaHlzOTB0Nmd1Vm5rcWFJR3liNUlRM009IiwidGl0bGUiOiLQmNCaXzPQul8yMC0yMV%2FQvtGB0LXQvdGMX9GBMTMuMTEuMjAyMC54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5ODA5OTY0NCwieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Физико-технологический институт</a>
                         <ul class="sub-sub-menu__listt">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=eg%2BaSPtu%2B4HlfO2zwmEaf9USup57InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVLT1l4Skpuay1RUmVfNU9ndXIwWUUwbW9BUTBtQnc3SC1rdzFYUEdlRXlsMERJM1VyODBpT1NONmFnR0VseU1QWnRNTnBGU3VRNG5vNVUwMTJRX25fNm1Gd3JjdGs5OVY3TlRHbTQ4NFBCZ0dNWjNiVU9BVTdFSXBrOUdtdEV1X0E9PT9zaWduPWJsdDRvelhEUV9reFIyVVBWc2NMaXNWZ3ZOeEt6THNYeEFPSFBCZmxLNTg9IiwidGl0bGUiOiLQpNCi0JhfM9C6XzIwLTIxX9C%2B0YHQtdC90Yxf0LfQsNGH0LXRgi54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5ODI3Mjk2NiwieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=1f%2F8nKIao8uNX7MjIqVg9bEMJph7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVDWmx6S3pZZTh6THhaNkNGdm9WNXg2VVE0R1JkY29tblJkaG1wT2FSRFZPQ2RhZ2xnSUR5MnZNSDk4d2hJbzNtYk04czItdkVxa1RJaEs3NDlVTW9IRFJQNWhZVlBva1NzTXRDdHctZG44S2JSLUs0TXBFMkZYVnFvNXVxbzhRWUE9PT9zaWduPVQtc0Z4bERHU0g3QWVtcnpFMm5vZThULWE0dFEwZHRzRGxRSG1Id3VKaXc9IiwidGl0bGUiOiLQpNCi0JhfM9C6XzIwLTIxX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4Mjc0NjcwLCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=K7ekHev%2FRiPY7yH%2FXGI6pyX1QqV7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVBdWtFUWpqYjYwRklNeWFyMnM4Vi03a01SOGMtcWZnM1B0NWNINEhhS1hyUnFpT2huVjNvaFRabXltRjkwcUZJcmJSQmUyMWk5MVZhVEhOMkdKcy0ycWE1cmpCczhGRGNVeTY0aDhFaE9WNi0wSEtjNEhwUjQ3eDJ6RGt6cWlodkE9PT9zaWduPVNkbFJNbDBWeGR4OTZ6dW9TRF9hc0gwU091TmpraHNTaU92ZVBRN2FFM1U9IiwidGl0bGUiOiLQpNCi0JhfM9C6XzIwLTIxX9C%2B0YHQtdC90Yxf0YExMy4xMS4yMDIwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4MjczNTQ3LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт комплексной безопасности и специального приборостроения</a>
                         <ul class="sub-sub-menu__listt">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=pA9Wx2IOK4UNQdoAQL71lqBgdit7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVKOUU4dmVYcTBFc2Nla3Q3QzE5NnF0U1FPeWNjS1BMblg0cDh1U1NiWWJLTGxtREJCcC1Bb2t0SEVxb2FCMEZKLXo1RUtxZU10TG5pVWRFYVIzZ0dDVWotRGZLVWVpN1g4b0VDMHJCeGNHSXlvZFpnV0JfUElGZjJULTg3bGFDM3c9PT9zaWduPUo5MkdUQkVPUzg2SlhQLTVpVkMyRXJRR3Q5bVBPRjZFTVFoQkY4ekRpY1k9IiwidGl0bGUiOiLQt9Cw0Ydf0JrQkdC40KHQn18zX9C60YPRgNGBX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4NTA3ODEyLCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=0uX5I7WkIK4h0RoqQXJn1Lz782V7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVEWkI3OHhLRHcwZ0pxVURINVZjaDNqdUhQU0JnSjg5SUZJeXZENUcxdmFXanJYcjFZdnVsQ0RFWmNjbnRMMzNmTzYtYkhvMnZjMTMtdDJPUE9GZVk1Zzh3cUJFSE9KdHd5VEx2aEc0M0NMbjVOQVJLNnBZclRWMWoxTTV0cEVIcVE9PT9zaWduPXVjZ2JDbWdiX1M4cTR4RHlaMXRBOEZ6WDFGaE14dXFuem5xVHRKVUZHb3c9IiwidGl0bGUiOiLRjdC60Ldf0JrQkdC40KHQn18zINC60YPRgNGBX9C30LjQvNCwLnhscyIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg1MDY5NzQsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=CxqZ5sa3c0%2BNm8xvEZXda6zJkxN7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVIVXEzbnhzZlF0al9TZTBKVjFGa0NTeThWb2ViZUh3SW1nQmpiNEFuV2xXRVRSNlU2TUpiZ3NKWEpUVHdhRnhsU2RPUm1pSnJKblpzaVpHYS1VVFhmNjBNUFBMRlZtM3diQVJmcWFhYXVKbjNuQXpqR2NuRGFnY2dHdTlqZTN1RWc9PT9zaWduPVBfaXV5ZVRaeU5QTF9JSWNEWEdTZzZodXMzbU5ZUHJyY2RhQ3BLQ1R2dlE9IiwidGl0bGUiOiLQmtCR0LjQodCfIDMg0LrRg9GA0YEgMSDRgdC10LwueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg1MDYxOTUsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт радиотехнических и телекоммуникационных систем</a>
@@ -328,50 +341,50 @@
             <li><a href="" class="menu__link">Четвертый Курс</a><ul class="sub-menu__listt">
                     <li><a href="" class="sub-menu__link">Институт информационных технологий</a>
                         <ul class="sub-sub-menu__listt">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=kqallrEVLMjOYdpTHrV%2BglDIjkJ7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVGeUlxbUxqOUx4Z295UjVoNFBYYndnOXlLZnZUdXVwZDhqNjlkbk0xM1dSTXBSSExEWHJKU1pUcUVJTTZWdlNuX1ZEYTRMTW43b2dRUkJHbzI5X2F0cUxjTXUwNjFWTm5HVDdfWkpOYTBtQXBzd0ZzNmtJQkxBc1BOb3FmMVpNMFE9PT9zaWduPVdKdmR5al9Oa1dZWXR1WElmS0NjWWNaSm9keldaMDczNUluQ3BGX2s2M0k9IiwidGl0bGUiOiLQmNCY0KJfNNC6XzIwLTIxX9C%2B0YHQtdC90Yxf0LfQsNGH0LXRgi54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5ODAxMTU3NiwieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=aNeBmtXjctxQqozqPkI3bg5YzHx7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVPOXk3QVZkamc0T1VYRnhaV0hUY1hjcUZ2Y0w2THk5RG5UbnI0a1RNTWFmRU5VMHN2YVNrMkdjTkZuS0tOdTdNdHNZbE5EOFV0amh6OEtJYTRjUlJHN0NOSDJFQThWQnVpakhaTERGLXd2VElDdmx3R0ZUWXMxRWZObFpLQmp3TlE9PT9zaWduPThSZXVpNEcxRmdmMWR2MjdRVHlxREFkdU9xWmdSZWo0bFR2djBJWDZ2S1E9IiwidGl0bGUiOiLQmNCY0KJfNNC6XzIwLTIxX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk3OTgzMDMzLCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=crdFmfpszsfwg2JdeJbb1eZQVht7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVOX0xGTDB6T1hGTTEzRHBOYXJPZGdtN3RjelJreVZFZlY4Yl8tT2JnM3diZFZDTXYwOEoxN1ZlMGtHakRYWlo0U3J6dldSVVNRa3JoWlFEbGtTeW5UXzJHb1VDWVd1bWpNRGQ4cWRUb0luTDVWWUlxZzBkZTBqSXg1S1Jla3pUZFE9PT9zaWduPWF0UVhPM01nZDFza3Y4U082MVBha0tUQnQ3c3VteHlwcUNpY3RRWXhPYzQ9IiwidGl0bGUiOiLQmNCY0KJfNNC6XzIwLTIxX9C%2B0YHQtdC90Yxf0YExMy4xMS4yMDIwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk3OTk2ODc3LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Институт кибернетики</a>
                         <ul class="sub-sub-menu__listt">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=LVARQsEuuoPVYJcD1EO6FCGmWSh7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVDazVUazFRZ3hOUnBJTlBkakh6cDRMVG5XQXdFai1SNy0zdkJSMjZBTUJNUjVRU1RpeWNEZ2FFZjJRa01GbmsyRkRDeWYzRmVmZXlncDhNZ1NrN3FIV3A3MWRQMWJfVnlzYWFWam9SNVlyWEVJUDZMdWZlMzdueVhleEVGVzl4TlE9PT9zaWduPUJyMjNRTWtIbTNCRlRVY3B0a1E4U0RZTlBSTU9NTFR1Vk1la1RkT00wemc9IiwidGl0bGUiOiLQmNCaXzTQul8yMC0yMV%2FQvtGB0LXQvdGMX9C30LDRh9C10YIueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTgxMjYyNTIsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=%2FgigEOQMszWyfxQYbwpL7V8pzsx7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVGMHFVQUpDYmZPb09PZW81SGRheXZkWUpueWlUNloxZFhMaFktLWZjbm4yc3JXUmJVSzZELVJRYTRkeHh1V3pMbWMtTkhGZzhVODZPeFFacTlabkZVRmR6akdwZk1aWkh0bnBNdG5YQmdxdHlUOHJ4bE1ZTVN2cHd3ci11MExMMnc9PT9zaWduPXdJZlVsNXlkYzhXX0JIcS1JN291X3NFOFE0ZldtRnlCRFczX3c0VHJyMXM9IiwidGl0bGUiOiLQmNCa0LjQsV800LpfMjAtMjFf0LfQuNC80LAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTgxNDcyMjcsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=fhZ%2BRJsSJFRpQWUF81njR4QNEN17InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVNNmZYd202dXpnRFBZc1ZUbjZjMjJrUWJUY25PVTRoTUluZnowM2dzRnBCNnhvVHl5XzV5cE5jX0FPbHNyaThTaHBJUFZacHJfMU1iNzRBS3luaU1CQ292eVJMMkVIUkRXbjd1U1poM3d6NHl3LXBxV005TXVWYWhzVUFwUV9IX1E9PT9zaWduPVh5cm5rRnAzQlJ0b0hURnpZZ1JySFl4dUxtdW4yampuZF9oYU9PaEJEamM9IiwidGl0bGUiOiLQmNCaXzTQul8yMC0yMV%2FQvtGB0LXQvdGMX9GBMTMuMTEuMjAyMC54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5ODEzNzI5NywieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                     <li><a href="" class="sub-menu__link">Физико-технологический институт</a>
                         <ul class="sub-sub-menu__listt">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=30CppiOVhGoBx7AIPeIeNDfQzW17InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVQZFdXRFBZLVRudzRuOUNQaUdZRm1mZUtIdGY3WjJieU9ISXRjM3hsbzlCejlHd0VUZE1UWmRzRnRmNnI4UnFFV0Y2NHBEaUpCYmRycks0WUc3X04yOE1yckJxSDV0cDhnRlh0blhDX2ZteGR1cUxmbFhHckV0clYxajlma20tVnc9PT9zaWduPUptZkpWaWlGWFF2UUhCczZsNkQtaDRrWDJNNUJneHlRM3hacmZaY0lKaHM9IiwidGl0bGUiOiLQpNCi0JhfNNC6XzIwLTIxX9C%2B0YHQtdC90Yxf0LfQsNGH0LXRgi54bHN4Iiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI1ODgxMjMxNzMiLCJ0cyI6MTYxMDk5ODMxODk2OSwieXUiOiI0NTAzOTkwNzQxNjA5MzM3NDI2In0%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=hIh0lniEDHJkqISeOSt7phS59qJ7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVHWFVaQ2pSWTFfSTA4bXBTTC0tUUVQSF9WTkFnZEhLNE93aHZLUEF6TkxkR3hxZjZtLXBSaVRvV3NEOTRXMWpXcDdaNDVHYUJGUlBwUzZfQUNUbEVpbjlqYzlvVnRBdkFndFcyZ3dpYXhOaGVnU0tpSmJrZmpnd2pYUDMtc3Jsc2c9PT9zaWduPW8tcHhhM1g5M3VlVUpKZEZSNVZnSktZOWVTQzBQRzhCZldOaWxsTmR4RGc9IiwidGl0bGUiOiLQpNCi0JhfNNC6XzIwLTIxX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4MzIxMDIyLCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=1A%2FVOmnmyyxNqP8qGjm6GFPppwt7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVJbHVRcTY5TjNTTFJIdGtpbml2ZFVhcUJBd3ctNUo1dENqemFZUll2Mmh4QTE5M3Bld016ZmxzOEt2ZlJFRWJuaEtsaE1KV2k1Wi0xVUdIX2tjWTRCaC1iQ3ZLbjQ2YmxBd2FNbEY2WUV1X3ZBWnRjYmtkaF8wNTRhZWVva2lMZXc9PT9zaWduPUF5Um9mQnlyWVF3bUx5dVVSemJXSE5vblp4WUc3eVFmV3lyLVlnUHl3QkE9IiwidGl0bGUiOiLQpNCi0JhfNNC6XzIwLTIxX9C%2B0YHQtdC90Yxf0YExMy4xMS4yMDIwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4MzE5ODM0LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                 <li><a href="" class="sub-menu__link">Институт комплексной безопасности и специального приборостроения</a>
                         <ul class="sub-sub-menu__listt">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=v%2B5J0DRNzSmmME%2F0p8BkPMbNwgt7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVNc3BKVlhkOGlXTjdSN2tGXy01QUN5emdOMC1RaHZ6WVNSd1ZFWEs0Wk1oUWVjbFlnQU5yM20xb1pEWkRZd25rVlliNkZobzAyem9jZUFZYjFMQmVfQWFha3FMZThnbmxPRDZ6QWh5M21NbFk3Z0NYQlNtQ2U5bV9OZUd1U25QMWc9PT9zaWduPWZnYUVMWnd1UlFDU1hPdHFuMEFKdng5VTY3Zm9rLUlWeGNPNTFvaE9kejQ9IiwidGl0bGUiOiLQt9Cw0Ydf0JrQkdC40KHQn180X9C60YPRgNGBX9C30LjQvNCwLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4NTM0OTkwLCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=zVBW34WMMnDkjdcwW56Sx3VKL3x7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVBY0tmLWxaeGQxZ0VKUU1Kd1BoMzdXb2FfSHdFUzhjbmRrS0pVNjBtbWFBakhVamZhU2F0c1RxM0g0NTh2c2Z1a2NUU0Y1Vmh1T1VfUERhQUpZVVYwdkFCYl9iU2hNQ0xMcWdGU2NiaEtMR25LQ3BFN2FfbEc2TENfWkxBdXlzTHc9PT9zaWduPXB0cTQtcThiUE1OeTdEMVhqOEJiYWFOYmUyYnVwV0hIYnRiWWtzNHdBMVE9IiwidGl0bGUiOiLRjdC60Ldf0JrQkdC40KHQn180INC60YPRgNGBX9C30LjQvNCwLnhscyIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg1MzQzODAsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=6ZEj7KWZLADfcyTDXMOhRHjpo557InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVNQ3RaZ3h6UUdYMERlSXE2VGZEUFdGREE4SktwU0E2czBFc2lfdk9yR25wOHFwcE9nX0lBVm1ZV2o3TlhsWVBmLVNRYjNSR2dRTV9MMGZWbVAwT29XeTVBY2tYSjh4bF9EdjVMLUtGZXpTZTh5M2FlNHNjaWVIY3VUbGpqX3NueWc9PT9zaWduPW85elNDdlZjd0tZczRwUmNSc24tNmpPcVF4LUhpSHNjQ2g0UEk3Ukk1aVE9IiwidGl0bGUiOiLQmtCR0LjQodCfIDQg0LrRg9GA0YEgMSDRgdC10LwueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg1MzM2ODMsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                 <li><a href="" class="sub-menu__link">Институт радиотехнических и телекоммуникационных систем</a>
                         <ul class="sub-sub-menu__listt">
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
-                            <li><a href="" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=n4RMT9XO%2BzI2fwJXoYhqCR8Yw7Z7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVHcE1kRFFveGtQU1B2NVR6cXJvWXpGcm5TWEQxanlCdGZnZ19fZjFSRGRvbmJpLXkxMkI1UnZKZ1hxWTlzZEkxZmFTbDBLVUFaNTB0NU1ZMlgyZklWckdIZjg1MXIzdkg2amluRFJKUEV5TEkwX1p2TldTS2otTm9vYnQtclR6Y2c9PT9zaWduPTluYkl4UU9uTXhOYVo2RFRMdG85c2tabndiTjl2MnpocXBiTFNlVkZPX289IiwidGl0bGUiOiLQmNCg0KLQoV800LpfMjAtMjFf0L7RgdC10L3RjF%2FQt9Cw0YfQtdGCLnhsc3giLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjU4ODEyMzE3MyIsInRzIjoxNjEwOTk4NjQzMTM2LCJ5dSI6IjQ1MDM5OTA3NDE2MDkzMzc0MjYifQ%3D%3D" target="_blank" class="sub-sub-menu__link">Зачёт</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=xcV6m%2FQgb5v0P%2FbfhTo%2FkCkK%2Ftt7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVNejdHMW5jbkd6QWVRazY1TzE1c1g3LThST01IZHBYNGNmT3EtVFBFcUJ3RUs4eHR4Y3Z0dEJMTmpGdDZrRkNNdHE3V25KUHEzQVVQOHd1Nkc2a3VlajI5R1d3QXFkbUJkT0hWR0xhSXc4ZEFjTm5vWDBMbHdDZEhhWUFSazk5S2c9PT9zaWduPUY4MU5kQW90aTQzSjZkUDRHaGxtbl9WRWt6d2VHV0E1TXlIQkhhTjVnY0E9IiwidGl0bGUiOiLQmNCg0KLQoV800LpfMjAtMjFf0LfQuNC80LAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg2NDIyNjQsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Экзамен</a></li>
+                            <li><a href="https://docviewer.yandex.ru/view/588123173/?*=z9bXxF%2B%2Fmni5tk9B1soIF%2BvNIsR7InVybCI6InlhLWJyb3dzZXI6Ly80RFQxdVhFUFJySlJYbFVGb2V3cnVKZWRLTzlaXzhMdXBZZDBfc1NSQUZsRkl4elgyaDZ1ZWRrLXpSeXd5RDl1MkFqYlZBUmd3ZWlkWXhSc0Y1UDQwTV9RQ2ljblRFSzFJdkF0VTVaSTZjRlpnUzJGZmdWUFFFR19ORlRfOFpEVGg4SlRGZ2tSejdJZnZGRkl2cHNLanc9PT9zaWduPU1uSXZzcGZoQVp3OWc5QmZpWEZJWXUtWTd2WmRYRUEzOVkybkZ2ak0xMXM9IiwidGl0bGUiOiLQmNCg0KLQoV800LpfMjAtMjFf0L7RgdC10L3RjF%2FRgTEzLjExLjIwMjAueGxzeCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNTg4MTIzMTczIiwidHMiOjE2MTA5OTg2NDE4MDcsInl1IjoiNDUwMzk5MDc0MTYwOTMzNzQyNiJ9" target="_blank" class="sub-sub-menu__link">Занятия</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            
+
           </ul>
-        
+
         </nav>
         <figure style="text-align: center;"><img style="width: 100%;height: 100%;" src="Group_6.png"></figure>
 	</div>
-		 
-    
-	   
+
+
+
 	<div id="footer">
 <br>
         <p><span style="align:left;"> Ⓒ2020 Марданян Артём ИКБО-20-19</span>
@@ -380,7 +393,7 @@
         <span style="float:right; margin-right:15px;"><a href="https://vk.com/mirea_official"><img src="vc.png"></a></span>
         <span style="float:right; margin-right:35px;"><a href="https://www.instagram.com/rtu_university_official/"><img src="inst.png"></a></span>
 	</div> 
-    
+
 </div>  
 </body>
 </html>
