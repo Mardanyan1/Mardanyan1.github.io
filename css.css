@@ -5,6 +5,7 @@ body
      font-family: Arial, sans-serif;
      margin: 10px;
      padding: 0;
+     min-width: 400px;
 }
 #header 
 {
@@ -55,10 +56,6 @@ body
      /*min-height:100%;*/
      line-height: 2;
 }
-/*#clear 
-{
-     clear: both;
-}*/
 #footer 
 {
     background: #FFD700;
